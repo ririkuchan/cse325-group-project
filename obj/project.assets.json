@@ -2355,11 +2355,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ririk\\cse325-group-project\\PersonalGardenLog\\PersonalGardenLog.csproj",
+      "projectUniqueName": "C:\\Users\\ririk\\cse325-group-project\\PersonalGardenLog.csproj",
       "projectName": "PersonalGardenLog",
-      "projectPath": "C:\\Users\\ririk\\cse325-group-project\\PersonalGardenLog\\PersonalGardenLog.csproj",
+      "projectPath": "C:\\Users\\ririk\\cse325-group-project\\PersonalGardenLog.csproj",
       "packagesPath": "C:\\Users\\ririk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ririk\\cse325-group-project\\PersonalGardenLog\\obj\\",
+      "outputPath": "C:\\Users\\ririk\\cse325-group-project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ririk\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bikAjsFxic8=",
+  "dgSpecHash": "vV3n/5oxKfY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ririk\\cse325-group-project\\PersonalGardenLog\\PersonalGardenLog.csproj",
+  "projectFilePath": "C:\\Users\\ririk\\cse325-group-project\\PersonalGardenLog.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ririk\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.28\\microsoft.aspnetcore.authorization.8.0.28.nupkg.sha512",
     "C:\\Users\\ririk\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.28\\microsoft.aspnetcore.components.8.0.28.nupkg.sha512",
