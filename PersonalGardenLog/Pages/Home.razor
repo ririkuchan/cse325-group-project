@@ -5,14 +5,14 @@
 @inject GardenDbContext DbContext
 @inject ISnackbar Snackbar
 
-<MudText Typo="Typo.h3" Color="Color.Primary" Class="mb-4">🌿 パーソナル・ガーデン・ログ</MudText>
+<MudText Typo="Typo.h3" Color="Color.Primary" Class="mb-4">🌿 Personal Garden Log</MudText>
 
 <MudGrid>
     <MudItem xs="12" md="7">
         <MudCard Elevation="3">
             <MudCardHeader>
                 <CardHeaderContent>
-                    <MudText Typo="Typo.h5">我が家の植物たち</MudText>
+                    <MudText Typo="Typo.h5">My Plants</MudText>
                 </CardHeaderContent>
             </MudCardHeader>
             <MudCardContent>
@@ -22,32 +22,29 @@
                 }
                 else if (!plants.Any())
                 {
-                    <MudText Typo="Typo.body1" Color="Color.Secondary">まだ植物が登録されていません。右のフォームから追加してください！</MudText>
+                    <MudText Typo="Typo.body1" Color="Color.Secondary">No plants registered yet. Add one from the form!</MudText>
                 }
                 else
                 {
-                    @* ★ T="string" を追加しました *@
                     <MudList T="string">
                         @foreach (var plant in plants)
                         {
-                            @* ★ T="string" を追加しました *@
                             <MudListItem T="string" Icon="@Icons.Material.Filled.LocalFlorist" IconColor="@(plant.IsUrgent ? Color.Error : Color.Success)">
                                 <div class="d-flex align-center justify-space-between w-100">
                                     <div>
-                                        @* ★ MudChip に T="string" を追加しました *@
                                         <MudText Typo="Typo.h6">@plant.Name <MudChip T="string" Size="Size.Small" Color="Color.Info">@plant.Species</MudChip></MudText>
-                                        <MudText Typo="Typo.body2">水やり間隔: @plant.WateringIntervalDays 日ごと</MudText>
+                                        <MudText Typo="Typo.body2">Interval: every @plant.WateringIntervalDays days</MudText>
                                         <MudText Typo="Typo.body2" Color="@(plant.IsUrgent ? Color.Error : Color.Default)">
-                                            次回予定日: @plant.NextWateringDate.ToString("yyyy/MM/dd") 
-                                            @(plant.IsUrgent ? "⚠️ 水やりが必要です！" : "")
+                                            Next Watering: @plant.NextWateringDate.ToString("yyyy/MM/dd") 
+                                            @(plant.IsUrgent ? "⚠️ Needs watering!" : "")
                                         </MudText>
                                     </div>
                                     <div>
                                         <MudButton Variant="Variant.Filled" Color="Color.Success" StartIcon="@Icons.Material.Filled.WaterDrop" Class="mr-2" OnClick="() => WaterPlant(plant)">
-                                            水やり完了
+                                            Watered
                                         </MudButton>
                                         <MudButton Variant="Variant.Outlined" Color="Color.Error" StartIcon="@Icons.Material.Filled.Delete" OnClick="() => DeletePlant(plant)">
-                                            削除
+                                            Delete
                                         </MudButton>
                                     </div>
                                 </div>
@@ -64,19 +61,19 @@
         <MudCard Elevation="3">
             <MudCardHeader>
                 <CardHeaderContent>
-                    <MudText Typo="Typo.h5">🆕 新しい植物を登録</MudText>
+                    <MudText Typo="Typo.h5">🆕 Add New Plant</MudText>
                 </CardHeaderContent>
             </MudCardHeader>
             <MudCardContent>
                 <EditForm Model="@newPlant" OnValidSubmit="SavePlant">
                     <DataAnnotationsValidator />
                     
-                    <MudTextField Label="植物の名前" @bind-Value="newPlant.Name" For="@(() => newPlant.Name)" Required="true" Class="mb-3" />
-                    <MudTextField Label="品種・カテゴリ (例: 観葉植物, ハーブ)" @bind-Value="newPlant.Species" Class="mb-3" />
-                    <MudNumericField Label="水やり間隔 (日数)" @bind-Value="newPlant.WateringIntervalDays" For="@(() => newPlant.WateringIntervalDays)" Min="1" Class="mb-4" />
+                    <MudTextField Label="Plant Name" @bind-Value="newPlant.Name" For="@(() => newPlant.Name)" Required="true" Class="mb-3" />
+                    <MudTextField Label="Species/Category" @bind-Value="newPlant.Species" Class="mb-3" />
+                    <MudNumericField Label="Watering Interval (days)" @bind-Value="newPlant.WateringIntervalDays" For="@(() => newPlant.WateringIntervalDays)" Min="1" Class="mb-4" />
 
                     <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" FullWidth="true" StartIcon="@Icons.Material.Filled.Add">
-                        ガーデンに追加する
+                        Add to Garden
                     </MudButton>
                 </EditForm>
             </MudCardContent>
@@ -99,7 +96,8 @@
 
     private async Task LoadPlants()
     {
-        plants = await DbContext.Plants.OrderBy(p => p.NextWateringDate).ToListAsync();
+        var rawList = await DbContext.Plants.ToListAsync();
+        plants = rawList.OrderBy(p => p.NextWateringDate).ToList();
     }
 
     private async Task WaterPlant(Plant plant)
@@ -108,7 +106,7 @@
         DbContext.Plants.Update(plant);
         await DbContext.SaveChangesAsync();
         await LoadPlants();
-        Snackbar.Add($"『{plant.Name}』の水やりを記録しました！", Severity.Success);
+        Snackbar.Add($"Recorded watering for {plant.Name}!", Severity.Success);
     }
 
     private async Task SavePlant()
@@ -119,7 +117,7 @@
         
         newPlant = new Plant(); 
         await LoadPlants();
-        Snackbar.Add("新しい植物を登録しました！", Severity.Success);
+        Snackbar.Add("New plant added!", Severity.Success);
     }
 
     private async Task DeletePlant(Plant plant)
@@ -127,6 +125,6 @@
         DbContext.Plants.Remove(plant);
         await DbContext.SaveChangesAsync();
         await LoadPlants();
-        Snackbar.Add($"『{plant.Name}』を削除しました。", Severity.Warning);
+        Snackbar.Add($"Deleted {plant.Name}.", Severity.Warning);
     }
 }

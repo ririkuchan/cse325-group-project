@@ -13,10 +13,24 @@ namespace PersonalGardenLog.Data
         {
             base.OnModelCreating(modelBuilder);
             
-            // テスト用の初期データ（シードデータ）を注入
+            // Seed data in English
             modelBuilder.Entity<Plant>().HasData(
-                new Plant { Id = 1, Name = "モンステラ", Species = "観葉植物", WateringIntervalDays = 7, LastWateredDate = System.DateTime.Now.AddDays(-6) },
-                new Plant { Id = 2, Name = "バジル", Species = "ハーブ", WateringIntervalDays = 2, LastWateredDate = System.DateTime.Now.AddDays(-3) } // すでに水やり期限切れの状態
+                new Plant 
+                { 
+                    Id = 1, 
+                    Name = "Monstera", 
+                    Species = "Houseplant", 
+                    WateringIntervalDays = 7, 
+                    LastWateredDate = System.DateTime.Now.AddDays(-6) 
+                },
+                new Plant 
+                { 
+                    Id = 2, 
+                    Name = "Basil", 
+                    Species = "Herb", 
+                    WateringIntervalDays = 2, 
+                    LastWateredDate = System.DateTime.Now.AddDays(-3) // Already overdue
+                }
             );
         }
     }

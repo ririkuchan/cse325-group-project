@@ -18,6 +18,6 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 builder.Services.AddMudServices();
 
 builder.Services.AddDbContext<GardenDbContext>(options =>
-    options.UseSqlite("Data Source=garden.db"));
+      options.UseInMemoryDatabase("GardenLog"));
 
 await builder.Build().RunAsync();

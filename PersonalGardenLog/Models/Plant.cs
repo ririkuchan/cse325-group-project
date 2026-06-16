@@ -7,21 +7,21 @@ namespace PersonalGardenLog.Models
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "植物の名前を入力してください")]
+        [Required(ErrorMessage = "Please enter the plant name.")]
         public string Name { get; set; } = string.Empty;
 
-        public string? Species { get; set; } // 品種（任意）
+        public string? Species { get; set; } // Category or Species (Optional)
 
         [Required]
-        [Range(1, 365, ErrorMessage = "水やり間隔は1日以上に設定してください")]
-        public int WateringIntervalDays { get; set; } // 水やりが必要な周期（日数）
+        [Range(1, 365, ErrorMessage = "Watering interval must be at least 1 day.")]
+        public int WateringIntervalDays { get; set; } // Cycle (in days)
 
-        public DateTime LastWateredDate { get; set; } = DateTime.Now; // 最後に水やりした日
+        public DateTime LastWateredDate { get; set; } = DateTime.Now; // Date of last watering
 
-        // 次回水やり予定日を自動計算するプロパティ（ロジック）
+        // Automatically calculated property for next watering date
         public DateTime NextWateringDate => LastWateredDate.AddDays(WateringIntervalDays);
 
-        // 水やりが必要な状態かどうかを判定するフラグ
+        // Flag to check if watering is needed
         public bool IsUrgent => DateTime.Now.Date >= NextWateringDate.Date;
     }
 }
