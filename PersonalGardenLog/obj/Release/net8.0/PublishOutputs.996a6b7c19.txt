@@ -1,0 +1,3 @@
+C:\Users\ririk\cse325-group-project\PersonalGardenLog\bin\Release\net8.0\publish\vercel.json
+C:\Users\ririk\cse325-group-project\PersonalGardenLog\bin\Release\net8.0\publish\emcc-props.json
+C:\Users\ririk\cse325-group-project\PersonalGardenLog\bin\Release\net8.0\publish\web.config
