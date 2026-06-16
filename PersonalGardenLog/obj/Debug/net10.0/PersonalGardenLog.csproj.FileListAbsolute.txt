@@ -1,0 +1,10 @@
+C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net10.0\EmbeddedAttribute.cs
+C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net10.0\ValidatableTypeAttribute.cs
+C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net10.0\PersonalGardenLog.csproj.AssemblyReference.cache
+C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net10.0\PersonalGardenLog.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net10.0\PersonalGardenLog.AssemblyInfoInputs.cache
+C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net10.0\PersonalGardenLog.AssemblyInfo.cs
+C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net10.0\PersonalGardenLog.csproj.CoreCompileInputs.cache
+C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net10.0\PersonalGardenLog.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net10.0\PersonalGardenLog.sourcelink.json
