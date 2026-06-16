@@ -1039,9 +1039,6 @@ C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net8.0\compresse
 C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net8.0\compressed\jgznnp5qpa-{0}-tptq2av103-tptq2av103.gz
 C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net8.0\compressed\ai5bddompa-{0}-lfu7j35m59-lfu7j35m59.gz
 C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net8.0\compressed\tppvnvq9xh-{0}-oyz0vx2fzb-oyz0vx2fzb.gz
-C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net8.0\compressed\20ir6oktk9-{0}-4p9okg81jf-4p9okg81jf.gz
-C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net8.0\compressed\2x06p3incl-{0}-zazfnbo4ps-zazfnbo4ps.gz
-C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net8.0\compressed\er7aape67g-{0}-erayto8wt9-erayto8wt9.gz
 C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net8.0\staticwebassets.development.json
@@ -1052,3 +1049,6 @@ C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net8.0\PersonalG
 C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net8.0\refint\PersonalGardenLog.dll
 C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net8.0\PersonalGardenLog.pdb
 C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net8.0\ref\PersonalGardenLog.dll
+C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net8.0\compressed\20ir6oktk9-{0}-sr4x7bzyab-sr4x7bzyab.gz
+C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net8.0\compressed\2x06p3incl-{0}-cjok5pv3qd-cjok5pv3qd.gz
+C:\Users\ririk\cse325-group-project\PersonalGardenLog\obj\Debug\net8.0\compressed\er7aape67g-{0}-xr4dmx3lfu-xr4dmx3lfu.gz

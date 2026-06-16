@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "PersonalGardenLog",
   "resources": {
-    "hash": "sha256-+gUAbunzHiZMmgjkD2GUG8bcrMkRQ144JUWhr7gakyo=",
+    "hash": "sha256-1V5/Uqg+aAkavRJSQ8eg/1H66lnCKV/vssQKgLVyvjM=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-nElGk+CZFyq0PbPm4JU8avD6lER7x9Z1C54BK7qY12Q="
     },
@@ -212,10 +212,10 @@
       "mscorlib.wasm": "sha256-UzRTTeY8BezBltrUF59UgvVNxbmnZS3LeowarsPY8+Y=",
       "netstandard.wasm": "sha256-xHQSNwqHm8E9DM86qW7CTJoRXXsQuGmPeNipDwQFNr8=",
       "System.Private.CoreLib.wasm": "sha256-N9/Djwpe2mX4HdyhCGu9jrxG/DSYKoTPbtsIOv6VFDk=",
-      "PersonalGardenLog.wasm": "sha256-GNsxLiSosDVG7ugw5r0UO3MkQcuKdFYxNfYm5Mm2H8k="
+      "PersonalGardenLog.wasm": "sha256-aLmJFXX2W6tai0xY3JhqBYUzS9cKjJw7gNcFKdxDKos="
     },
     "pdb": {
-      "PersonalGardenLog.pdb": "sha256-e2OZ/3rt6NlDoUZPrTHk87pO3Xa9ECk3IN+YhxIkvHg="
+      "PersonalGardenLog.pdb": "sha256-OJI0TkP5UxgcXKNo5U9m8I05f6KxaannNvk+hV8gVck="
     }
   },
   "cacheBootResources": true,
