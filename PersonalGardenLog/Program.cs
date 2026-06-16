@@ -1,6 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using PersonalGardenLog.Data;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
-using MudBlazor.Services; // 👈 より確実な名前空間を指定します
+using MudBlazor.Services; // 
 using System;
 using System.Net.Http;
 using PersonalGardenLog;
@@ -14,5 +16,8 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 
 // ⭐ MudBlazor のサービスを登録
 builder.Services.AddMudServices();
+
+builder.Services.AddDbContext<GardenDbContext>(options =>
+    options.UseSqlite("Data Source=garden.db"));
 
 await builder.Build().RunAsync();
