@@ -1,0 +1,6 @@
+C:\Users\ririk\cse325-group-project\output\sample-data\weather.json
+C:\Users\ririk\cse325-group-project\output\vercel.json
+C:\Users\ririk\cse325-group-project\output\_framework\blazor.boot.json
+C:\Users\ririk\cse325-group-project\output\_framework\emcc-props.json
+C:\Users\ririk\cse325-group-project\output\emcc-props.json
+C:\Users\ririk\cse325-group-project\output\web.config

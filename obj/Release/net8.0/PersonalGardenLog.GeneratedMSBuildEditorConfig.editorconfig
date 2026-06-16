@@ -18,45 +18,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = PersonalGardenLog
 build_property.RootNamespace = PersonalGardenLog
-build_property.ProjectDir = C:\Users\ririk\cse325-group-project\PersonalGardenLog\
+build_property.ProjectDir = C:\Users\ririk\cse325-group-project\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ririk\cse325-group-project\PersonalGardenLog
+build_property.MSBuildProjectDirectory = C:\Users\ririk\cse325-group-project
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/ririk/cse325-group-project/PersonalGardenLog/App.razor]
+[C:/Users/ririk/cse325-group-project/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ririk/cse325-group-project/PersonalGardenLog/Pages/Counter.razor]
+[C:/Users/ririk/cse325-group-project/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ririk/cse325-group-project/PersonalGardenLog/Pages/Home.razor]
+[C:/Users/ririk/cse325-group-project/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ririk/cse325-group-project/PersonalGardenLog/Pages/NotFound.razor]
+[C:/Users/ririk/cse325-group-project/Pages/NotFound.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm90Rm91bmQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ririk/cse325-group-project/PersonalGardenLog/Pages/Weather.razor]
+[C:/Users/ririk/cse325-group-project/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ririk/cse325-group-project/PersonalGardenLog/_Imports.razor]
+[C:/Users/ririk/cse325-group-project/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ririk/cse325-group-project/PersonalGardenLog/Layout/MainLayout.razor]
+[C:/Users/ririk/cse325-group-project/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-rmwqv04ahm
 
-[C:/Users/ririk/cse325-group-project/PersonalGardenLog/Layout/NavMenu.razor]
+[C:/Users/ririk/cse325-group-project/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-muguxom0vi
