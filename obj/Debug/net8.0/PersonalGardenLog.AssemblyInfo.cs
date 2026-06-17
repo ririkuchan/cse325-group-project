@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PersonalGardenLog")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7891891b55dc6918c978e62dad3070723c0aed09")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1a56f8e939a5bb12d4dcbb3fdfa41bfc73e1a91")]
 [assembly: System.Reflection.AssemblyProductAttribute("PersonalGardenLog")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PersonalGardenLog")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

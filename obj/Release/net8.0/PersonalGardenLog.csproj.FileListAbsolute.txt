@@ -2161,3 +2161,6 @@ C:\Users\ririk\cse325-group-project\obj\Release\net8.0\PersonalGardenLog.dll
 C:\Users\ririk\cse325-group-project\obj\Release\net8.0\refint\PersonalGardenLog.dll
 C:\Users\ririk\cse325-group-project\obj\Release\net8.0\PersonalGardenLog.pdb
 C:\Users\ririk\cse325-group-project\obj\Release\net8.0\ref\PersonalGardenLog.dll
+C:\Users\ririk\cse325-group-project\obj\Release\net8.0\compressed\20ir6oktk9-{0}-rfca8mulwh-rfca8mulwh.gz
+C:\Users\ririk\cse325-group-project\obj\Release\net8.0\compressed\2x06p3incl-{0}-xbcblvsofx-xbcblvsofx.gz
+C:\Users\ririk\cse325-group-project\obj\Release\net8.0\compressed\er7aape67g-{0}-dzpayvzypb-dzpayvzypb.gz
